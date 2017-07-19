@@ -9,45 +9,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Anton|Cabin" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Zenon Brzoza - fotograf</title>
+    <title>Galeria zdjęć</title>
 </head>
 <body>
     <header class="header">
         <h1 class="heading">Zenon <span class="heading_light">Brzoza</span></h1>
-        <p class="heading__paragraph">profesjonalny fotograf</p>
+        <p class="heading__paragraph">galeria zdjęć</p>
         <button class="button-arrow"><img src="img/arrow-down.svg" alt="czytaj dalej" class="img-arrow"></button>
     </header>
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__list-item"><a href="index.html" class="nav__link nav__link_active">O mnie</a></li>
-            <li class="nav__list-item"><a href="galeria.html" class="nav__link">Galeria</a></li>
-            <li class="nav__list-item"><a href="" class="nav__link">Kontakt</a></li>
+            <li class="nav__list-item"><a href="index.html" class="nav__link">O mnie</a></li>
+            <li class="nav__list-item"><a href="galeria.html" class="nav__link nav__link_active">Galeria</a></li>
+            <li class="nav__list-item"><a href="kontakt.html" class="nav__link">Kontakt</a></li>
         </ul>
     </nav>
     <main class="main">
-        <article class="article">
-            <h2 class="article__heading">O mnie</h2>
-            <section class="article__section">
-                <h3 class="section__heading">Kim jestem?</h3>
-                <p class="paragraph">Nazywam się <span class="span_text-bold">Zenon Brzoza</span>, lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus venenatis felis ac ultrices. Suspendisse sit amet turpis ipsum. Maecenas volutpat varius aliquam. Cras convallis facilisis elit in posuere. Curabitur neque sem, molestie sit amet tincidunt nec, elementum ut dolor. Nunc volutpat, magna in molestie ullamcorper, erat magna dapibus sem, sed varius sem sem id augue. Donec efficitur nunc in posuere euismod.</p>
-            </section>
-            <section class="article__section">
-                <h3 class="section__heading">Moje początki z fotografią</h3>
-                <p class="paragraph">Fotografią zainteresowałem się na pierwszym roku studiów, curabitur vehicula massa in eleifend mollis. Maecenas vitae justo in magna efficitur tempus et vehicula nisi. Nunc ligula est, sagittis ac eros in, eleifend accumsan quam. Ut auctor condimentum massa id ullamcorper. Quisque aliquet efficitur elit, eget ullamcorper nisi ornare et. Suspendisse sagittis risus auctor ante consequat, a ultricies libero ornare.</p>
-            </section>
-            <section class="article__section">
-                <h3 class="section__heading">Moja aktywność w sieci</h3>
-                <p class="paragraph">Aktywnie udzielam się na poniższych platformach i mediach społecznościowych.</p>
-                <ul class="social-media">
-                    <li><a href="#"><img src="img/icons/facebook.svg" alt="facebook"></a></li>
-                    <li><a href="#"><img src="img/icons/twitter.svg" alt="twitter"></a></li>
-                    <li><a href="#"><img src="img/icons/youtube.svg" alt="youtube"></a></li>
-                    <!-- icons from https://icomoon.io/app/#/select  GPL license-->
-                </ul>
-            </section>
+        <h2 class="main__heading">Galeria zdjęć</h2>
+        <ul class="main__category">
+            <li class="category__list-item"><button class="category__button category__button_active">Natura</button></li>
+            <li class="category__list-item"><button class="category__button">Ludzie</button></li>
+            <li class="category__list-item"><button class="category__button">Architektura</button></li>
+            <li class="category__list-item"><button class="category__button">Inne</button></li>
+        </ul>
+        <article class="article-category">
+            <h3 class="article-category__heading"></h3>
+            <div class="images-container">
 
+            </div>
         </article>
-
     </main>
     <div class="background-container"></div>
     <footer class="footer">
