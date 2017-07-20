@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="heading">Zenon <span class="heading_light">Brzoza</span></h1>
+        <h1 class="heading"><a class="heading__link" href="index.html">Zenon <span class="heading_light">Brzoza</span></a></h1>
         <p class="heading__paragraph">galeria zdjęć</p>
         <button class="button-arrow"><img src="img/arrow-down.svg" alt="czytaj dalej" class="img-arrow"></button>
     </header>
@@ -26,20 +26,73 @@
     </nav>
     <main class="main">
         <h2 class="main__heading">Galeria zdjęć</h2>
-        <ul class="main__category">
-            <li class="category__list-item"><button class="category__button category__button_active">Natura</button></li>
-            <li class="category__list-item"><button class="category__button">Ludzie</button></li>
-            <li class="category__list-item"><button class="category__button">Architektura</button></li>
-            <li class="category__list-item"><button class="category__button">Inne</button></li>
+        <ul class="category-list">
+            <li class="category__list-item"><button aria-expanded="true" class="category__button category__button_active">Natura</button></li>
+            <li class="category__list-item"><button aria-expanded="false" class="category__button">Ludzie</button></li>
+            <li class="category__list-item"><button aria-expanded="false" class="category__button">Architektura</button></li>
+            <li class="category__list-item"><button aria-expanded="false" class="category__button">Inne</button></li>
         </ul>
-        <article class="article-category">
-            <h3 class="article-category__heading"></h3>
-            <div class="images-container">
-
-            </div>
+        <article class="gallery gallery_active">
+            <h3 class="gallery__heading">Natura</h3>
+            <ul class="gallery__images-list" id="nature">
+                <li><img src="img/gallery/nature/fern_min.jpg" class="gallery__img" alt="paproć"></li>
+                <li><img src="img/gallery/nature/flower_min.jpg" class="gallery__img" alt="kwiat"></li>
+                <li><img src="img/gallery/nature/insect_min.jpg" class="gallery__img" alt="pasikonik"></li>
+                <li><img src="img/gallery/nature/mushrooms_min.jpg" class="gallery__img" alt="grzyby"></li>
+                <li><img src="img/gallery/nature/flower_min.jpg" class="gallery__img" alt="kwiat"></li>
+                <li><img src="img/gallery/nature/fern_min.jpg" class="gallery__img" alt="paproć"></li>
+                <li><img src="img/gallery/nature/mushrooms_min.jpg" class="gallery__img" alt="grzyby"></li>
+                <li><img src="img/gallery/nature/insect_min.jpg" class="gallery__img" alt="pasikonik"></li>
+            </ul>
         </article>
+        <article class="gallery">
+            <h3 class="gallery__heading">Ludzie</h3>
+            <ul class="gallery__images-list" id="people">
+                <li><img src="img/gallery/people/farmer_min.jpg" class="gallery__img" alt="farmer"></li>
+                <li><img src="img/gallery/people/girl-with-hat_min.jpg" class="gallery__img" alt="dziewczyna w kapeluszu"></li>
+                <li><img src="img/gallery/people/farmer_min.jpg" class="gallery__img" alt="farmer"></li>
+                <li><img src="img/gallery/people/girl_min.jpg" class="gallery__img" alt="dziewczyna"></li>
+                <li><img src="img/gallery/people/old-man_min.jpg" class="gallery__img" alt="staruszek"></li>
+                <li><img src="img/gallery/people/girl-with-hat_min.jpg" class="gallery__img" alt="dziewczyna w kapeluszu"></li>
+                <li><img src="img/gallery/people/farmer_min.jpg" class="gallery__img" alt="farmer"></li>
+                <li><img src="img/gallery/people/old-man_min.jpg" class="gallery__img" alt="staruszek"></li>
+                <li><img src="img/gallery/people/girl_min.jpg" class="gallery__img" alt="dziewczyna"></li>
+            </ul>
+        </article>
+        <article class="gallery">
+            <h3 class="gallery__heading">Architektura</h3>
+            <ul class="gallery__images-list" id="architecture">
+                <li><img src="img/gallery/architecture/church_min.jpg" class="gallery__img" alt="kościół"></li>
+                <li><img src="img/gallery/architecture/siegessaule_min.jpg" class="gallery__img" alt="wieża"></li>
+                <li><img src="img/gallery/architecture/town_min.jpg" class="gallery__img" alt="miasto"></li>
+                <li><img src="img/gallery/architecture/church_min.jpg" class="gallery__img" alt="kościół"></li>
+                <li><img src="img/gallery/architecture/staircase_min.jpg" class="gallery__img" alt="schody"></li>
+                <li><img src="img/gallery/architecture/town_min.jpg" class="gallery__img" alt="miasto"></li>
+                <li><img src="img/gallery/architecture/siegessaule_min.jpg" class="gallery__img" alt="wieża"></li>
+                <li><img src="img/gallery/architecture/staircase_min.jpg" class="gallery__img" alt="schody"></li>
+                <li><img src="img/gallery/architecture/town_min.jpg" class="gallery__img" alt="miasto"></li>
+            </ul>
+        </article>
+        <article class="gallery">
+            <h3 class="gallery__heading">Inne</h3>
+            <ul class="gallery__images-list" id="others">
+                <li><img src="img/gallery/others/bubbles_min.jpg" class="gallery__img" alt="bańki"></li>
+                <li><img src="img/gallery/others/material_min.jpg" class="gallery__img" alt="materiał"></li>
+                <li><img src="img/gallery/others/old-phone_min.jpg" class="gallery__img" alt="stary telefon"></li>
+                <li><img src="img/gallery/others/bubbles_min.jpg" class="gallery__img" alt="bańki"></li>
+                <li><img src="img/gallery/others/puzzles_min.jpg" class="gallery__img" alt="puzzle"></li>
+                <li><img src="img/gallery/others/old-phone_min.jpg" class="gallery__img" alt="stary telefon"></li>
+                <li><img src="img/gallery/others/material_min.jpg" class="gallery__img" alt="materiał"></li>
+            </ul>
+        </article>
+        <div class="gallery-view">
+            <button class="button-close-view"><img src="img/icons/cross.svg" alt="zamknij"></button>
+            <div class="img-container-view"></div>
+            <button class="button-previous"><img src="img/icons/arrow-left.svg" alt="poprzednie"></button>
+            <button class="button-next"><img src="img/icons/arrow-right.svg" alt="następne"></button>
+            <span class="img-number"></span>
+        </div>
     </main>
-    <div class="background-container"></div>
     <footer class="footer">
         <section class="footer__section">
             <h2 class="section__heading">Polecane linki</h2>
@@ -67,5 +120,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/sticky-nav.js"></script>
+    <script src="js/gallery-toggle.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
