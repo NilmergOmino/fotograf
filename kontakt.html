@@ -26,21 +26,25 @@
     </nav>
     <main class="main">
         <article class="article">
-            <h2 class="article__heading">Kontakt</h2>
+            <header>
+                <h2 class="article__heading">Kontakt</h2>
+                <p>Obecnie mieszkam w Krakowie.</p>
+                <p>Masz dla mnie ciekawą propozycję współpracy? Napisz!</p>
+            </header>
             <form class="form-contact">
                 <div class="two-pair-container">
                     <div class="pair-container_email">
                         <label for="email" class="label">Twój adres e-mail</label>
-                        <input type="email" name="email" id="email" class="input-email" required>
+                        <input type="email" name="email" id="email" class="input-email focus_animation" required>
                     </div>
                     <div class="pair-container_title">
                         <label for="title" class="label">Tytuł wiadomości</label>
-                        <input type="text" name="title" id="title" class="input-title" required>
+                        <input type="text" name="title" id="title" class="input-title focus_animation" required>
                     </div>
                 </div>
                 <div class="pair-container_content">
                     <label for="content" class="label">Treść wiadomości</label>
-                    <textarea name="content" id="content" class="textarea" required></textarea>
+                    <textarea name="content" id="content" class="textarea focus_animation" required></textarea>
                 </div>
                 <input type="submit" value="Wyślij" class="input-submit">
             </form>
@@ -74,5 +78,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/sticky-nav.js"></script>
+    <script src="js/form-animation.js"></script>
 </body>
 </html>
