@@ -1,0 +1,78 @@
+@media (max-width: 1000px) {
+    .form-contact{
+        width: 75%;
+    }
+}
+@media (max-width: 960px) {
+    .header{
+        background: url("../img/frog_min_960.jpg") no-repeat fixed top;
+    }
+    .background-container{
+        background: url("../img/photographer_min_960.jpg") no-repeat fixed top;
+    }
+    .background-container_contact{
+        background: url("../img/mailwoman_min_960.jpg") no-repeat fixed top;
+    }
+    .background-container_gallery{
+        background: url("../img/photographer-lego_min_960.jpg") no-repeat fixed center;
+    }
+}
+@media (max-width: 700px) {
+    .two-pair-container{
+        width: 100%;
+        margin: 0;
+    }
+    .pair-container_content{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .gallery{
+        width: 98%;
+    }
+    .category-list{
+        .category__list-item{
+            width: 30%;
+            margin-top: 5px;
+        }
+    }
+    .article-more{
+        width: 70%;
+    }
+}
+@media (max-width: 460px) {
+    .footer{
+        .footer__section{
+            width: 90%;
+            padding: 25px 0;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .category-list{
+        .category__list-item{
+            width: 45%;
+        }
+    }
+    .article__section{
+        width: 95%;
+        padding: 25px 0;
+    }
+}
+@media (max-width: 350px) {
+    .nav{
+        .nav__list-item{
+            display: inline-block;
+            width: 30%;
+        }
+        .nav__link{
+            width: calc(100% - 10px);
+        }
+    }
+}
+@media (max-width: 260px) {
+    .nav{
+        .nav__link{
+            font-size: 16px;
+        }
+    }
+}

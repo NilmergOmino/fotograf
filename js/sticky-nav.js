@@ -5,7 +5,7 @@ $(document).ready(function(){
     var navSticky = function(navMaxTop){
         var windowTop = $(window).scrollTop(),
             distanceMax = $('.main').offset().top;
-        if(windowTop >= navMaxTop){
+        if(windowTop > navMaxTop){
             $('.nav').addClass("nav_sticky");
             var distanceCurrent = windowTop - navMaxTop,
                 distancePercent = distanceCurrent/(distanceMax - navMaxTop),
@@ -18,7 +18,7 @@ $(document).ready(function(){
                 "padding-top": currentNavPadding+"px"
             });
         }
-        else if(windowTop < navMaxTop){
+        else if(windowTop <= navMaxTop){
             $('.nav').removeClass("nav_sticky");
             $('.nav').css({
                 "height": navMaxHeight+"px",
